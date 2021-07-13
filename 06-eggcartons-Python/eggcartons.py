@@ -5,5 +5,11 @@
 
 
 def fun_eggcartons(eggs):
-	# your code goes here
-	return 1
+    if((eggs>0)and(eggs<12)):
+        return 1
+    elif(eggs%12 == 0):
+        carton = eggs/12
+        return(round(carton))
+    else:
+        carton = eggs/12
+        return(round(carton)+1)
