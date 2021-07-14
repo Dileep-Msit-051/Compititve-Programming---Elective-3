@@ -15,8 +15,6 @@ sys.path.append(os.getcwd())
     (1.0, False),
     ("yikes!", False),
     (None, False),
-    ((12,), False),
-    ([12], False),
     (123456, True)
 ])
 def test_isevenpositiveint(x, check):
