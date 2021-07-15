@@ -5,9 +5,7 @@
 # than crashing), and isevenpositiveint(123456) returns True.
 
 def isevenpositiveint(x):
-    if(x%2==0 and x>0 and x!=str(x)):
+    if(type(x)==int and x%2==0 and x>0):
         return True
-    elif(x==[] and x==()):
-        return False
     else:
         return False
