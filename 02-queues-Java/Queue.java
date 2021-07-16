@@ -1,8 +1,12 @@
 public class Queue{
-    int queue[]=new int[5];
+    int queue[];
     int size;
     int front;
     int rear;
+    public Queue(int n){
+        queue=new int[5];
+        enqueue(n);
+    }
 
     public void enqueue(int data){
         if(!isFull()){
@@ -26,6 +30,11 @@ public class Queue{
           System.out.println("queue is Empty");
       }
       return data;
+    }
+      public int peek()
+      {
+        int data=queue[front];
+        return data;
 
 
     }
@@ -49,8 +58,8 @@ public class Queue{
         return size==5;
     }
 
-    public static void main(String[] args){
-        Queue q=new Queue();
+   /*public static void main(String[] args){
+        Queue q=new Queue(5);
         q.enqueue(5);
         q.enqueue(2);
         q.enqueue(7);
@@ -68,5 +77,5 @@ public class Queue{
         System.out.println("size"+q.getsize());
         q.show();
 
-    }
+    }*/
 }
