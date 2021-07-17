@@ -22,10 +22,17 @@
 #   [ 0, 1, 3] ]
 
 def removeRowAndCol(L, row, col):
-    for i in range(len(L)):#012
-        for j in range(len(L[i])):
-            print(L[i][j],end=" ")
-        print()
+    L.pop(row)
+    for i in range(len(L)):
+        L[i].pop(col)
+    print(L)
+    #for i in range(len(L)):
+       # for j in range(len(L[i])):
+           # print(L[i][j], end=" ")
+        #print()    
+        
+            
+#print ("The original list is : " + str(L))
 
 
 L=[[ 2, 3, 4, 5],[ 8, 7, 6, 5],[ 0, 1, 2, 3]]
