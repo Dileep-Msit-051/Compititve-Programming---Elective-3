@@ -6,4 +6,21 @@
 
 
 def fun_get_kth_digit(digit, k):
-	return 0
+    l=[]
+    count=0
+    digit=abs(digit)
+    while(digit>0):#495,1
+        x=digit%10
+        l.append(x)
+        digit=digit//10
+        count+=1
+    if(k>len(l)-1):
+        return 0
+        
+        
+    #print(l)
+    #for i in range(len(l)):
+    return l[k]
+#print(fun_get_kth_digit(495,1))
+        
+        
