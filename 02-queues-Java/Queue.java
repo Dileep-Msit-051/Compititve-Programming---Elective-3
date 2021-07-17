@@ -31,7 +31,7 @@ public class Queue{
       }
       return data;
     }
-      public int peek()
+    public int peek()
       {
         int data=queue[front];
         return data;
