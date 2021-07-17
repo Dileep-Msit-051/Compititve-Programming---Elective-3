@@ -17,12 +17,17 @@ def mostfrequentdigit(n):
             return res[1]
     if(len(res)==1):
             return res[0]
-    for i in res:#1,2,2,2,3,4,
+    for i in res:#1,2,2,2,3,4,1,1,1
             a=res.count(i)
             dict[i]=a
-            if(a>max):
-                    max=a
-                    temp=i
+    #print(dict)
+    for k,v in dict.items():
+            if(v>max):
+                    max=v
+                    temp=k
+            if(v==max):
+                    if(temp>k):
+                            temp=k
     return temp 
             
     
