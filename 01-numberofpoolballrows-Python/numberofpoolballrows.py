@@ -7,9 +7,5 @@
 
 def fun_numberofpoolballrows(balls):
     
-
-    
-        
-        
     
     
