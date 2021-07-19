@@ -6,7 +6,7 @@ import pytest
 
 @pytest.mark.parametrize('n, result',[
 	(1, 1),
-	(3, 2),
+    (3, 2),
 	(6, 3),
 	(7, 4),
 	(10, 4),
