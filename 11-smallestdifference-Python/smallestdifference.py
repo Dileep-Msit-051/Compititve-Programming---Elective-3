@@ -4,6 +4,22 @@
 #       assert(smallestDifference([19,2,83,6,27]) == 4)
 # The two closest numbers in that list are 2 and 6, and their difference is 4.
 
+
+'''s = input().split(" ")
+    l = []
+    for i in s:
+        if len(i) != 0:
+            l.append(int(i))
+    return l'''
 def smallestdifference(a):
-	# Your code goes here
-	pass
+    if(len(a)==0):
+        return (-1)
+    d=10**20
+    for i in range(len(a)-1):
+        for j in range(i+1,len(a)):
+            if(abs(a[i]-a[j])<d):
+                d=abs(a[i]-a[j])
+    return (d)
+a=[1, -3, 71, 68, 17]
+print(smallestdifference(a))
+    
