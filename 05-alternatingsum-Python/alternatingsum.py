@@ -5,7 +5,16 @@
 
 
 
-def fun_alternatingsum(a): 
-	return 0
+def fun_alternatingsum(a):
+    if(len(a)==0):
+        return 0
+    res=0
+    for i in range(len(a)):#1234 #0123
+        if(i%2==0):
+            res=res+a[i]
+        else:
+            res=res-a[i]
+        
+    return res
 
 
