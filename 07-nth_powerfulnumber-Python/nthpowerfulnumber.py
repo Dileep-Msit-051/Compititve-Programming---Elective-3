@@ -54,7 +54,8 @@ def isPowerful(n):
      # not powerful, we return
      # false if n is not 1.
     return (n == 1)
-def nthPowerfulNumber(n):
+def nthpowerfulnumber(n):
+    print("hello")
     count = 0
     i=1
     while count <= n:
@@ -62,4 +63,5 @@ def nthPowerfulNumber(n):
             count+=1
             res=i
         i+=1
-    return res 
+    return res
+ 
