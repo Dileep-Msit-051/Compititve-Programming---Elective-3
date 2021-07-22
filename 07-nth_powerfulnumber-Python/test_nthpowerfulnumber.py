@@ -22,4 +22,5 @@ import pytest
 ])
 
 def test_nthpowerfulnumber(x, result):
-	assert nthpowerfulnumber(x) == result
+    #print("hello")
+    assert nthpowerfulnumber(x) == result

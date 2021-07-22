@@ -5,7 +5,7 @@
 # For example:- 36 is a powerful number. It is divisible by both 3 and square of 3 i.e, 9.
 
 import math
- 
+# reference from geeks for geeks.
 # function to check if
 # the number is powerful
 def isPowerful(n):
