@@ -14,6 +14,30 @@
 # assert(nth_happy_number(7) == 28)
 # assert(nth_happy_number(8) == 31)
 
-
+def sum(n):
+    sum=0
+    while(n>0):
+        r=n%10
+        sum+=(r*r)
+        n=n//10
+    return sum
+def ishappy(n):
+    if(n<=3 and n!=1):
+        return False
+    while(1):
+        if(n==1):
+            return True
+        n=sum(n)
+        if(n==4):
+            return False
+    return False
 def nth_happy_number(n):
-	return 0
+    count=0
+    i=1
+    while(count<=n):
+        if(ishappy(i)):
+            count+=1
+            res=i
+        i+=1
+    return i
+    
