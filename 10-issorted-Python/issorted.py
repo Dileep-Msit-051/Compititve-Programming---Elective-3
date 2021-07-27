@@ -7,12 +7,13 @@
 
 def issorted(a):
     l=len(a)
-    print(a)
-    for i in range(1,len(a)):
-        if (l[i]<l[i-1]):
+    print(l)
+    i=1
+    while(i<l):
+        if (a[i-1]<a[i] or a[i-1]>a[i]):
             return True
-        else:
-            return False
-a=[1,2,3,4,5]
-issorted(a)
+        i=i+1
+    return False
+#a=[1,2,3,4,5]
+#print(issorted(a))
         
