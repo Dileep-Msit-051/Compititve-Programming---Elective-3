@@ -6,9 +6,34 @@
 # For example, getAverage('13,excused,14,absent') ignores the two 
 # strings and averages 13 and 14 to return 13.5. Also, getAverage('a,b,c') returns 0.
 
+def isint(value):
+    try:
+        int(value)
+        return True
+    except ValueError:
+        return False
 
+def fun_getaverage(s):
+    l=s.split(",")
+    print(l)
+    res=[]
+    for i in l:
+        if(isint(i)):
+            res.append(i)
+    x=[int(i)for i in res]
+    if(len(x)==0):
+        return 0.0
+    avg=0
+    count=0
+    for i in x:
+        avg+=i
+        count+=1
+    return avg/count
+        
+        
+        
+            
 
-
-def fun_getaverage(s): 
-	return 0.0
-
+        
+#s="13,excused,14,absent"        
+#print(fun_getaverage(s))
