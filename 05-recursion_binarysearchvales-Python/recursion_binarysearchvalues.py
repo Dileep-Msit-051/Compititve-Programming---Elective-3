@@ -35,4 +35,8 @@ def binarysearch(L,v,low,high,res=[]):
         low=mid+1
         res.append((mid,L[mid]))
     return binarysearch(L,v,low,high,res)
+
+L = ['a', 'c', 'f', 'g', 'm', 'q']
+v = 'z'
+print(recursion_binarysearchvalues(L,v))
 	
