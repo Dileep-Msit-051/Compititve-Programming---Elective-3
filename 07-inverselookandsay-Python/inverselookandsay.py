@@ -28,7 +28,7 @@ def inverselookandsay(a):
     k=0
     list=[]
     for i in x:
-        for j in range(i):#01
+        for j in range(i):
             list.append(y[k])
         k+=1
     return list
