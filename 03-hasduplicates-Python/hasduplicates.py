@@ -3,6 +3,19 @@
 # contains any duplicate values (that is, 
 # if any two values in L are equal to each other), and False otherwise.
 
+from sys import float_repr_style
+
+
 def hasduplicates(L):
-	# Your code goes here
-	pass
+    res=[]
+    for i in range(len(L)):#0123
+        for j in range(len(L)):#0123
+            if L[i][j] not in res:
+                res.append(L[i][j])
+            else:
+                return True
+    return False
+                
+    
+                    
+                    
