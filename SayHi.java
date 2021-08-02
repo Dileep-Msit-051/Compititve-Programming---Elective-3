@@ -6,5 +6,17 @@
 
 
 public class SayHi {
-    
+    String name;
+    int age;
+    SayHi(String n, int i){
+        name=n;
+        age=i;
+    }
+    public void Display(){
+        System.out.println("Hi"+","+"my name is"+n+"" )
+    }
+
+    public static void main(String args[]) {
+        
+    }
 }
