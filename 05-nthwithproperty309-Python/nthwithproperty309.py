@@ -5,5 +5,7 @@
 # the nth number with Property309.
 
 def nthwithproperty309(n):
-	# Your code goes here
-	pass
+    
+ 
+
+print("nthWithProperty309 is", nthwithproperty309(int(input())))
